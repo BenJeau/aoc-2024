@@ -1,8 +1,8 @@
 use std::collections::BTreeMap;
 
 fn main() {
-    let example_data = include_str!("./input/day1_example.txt");
-    let data = include_str!("./input/day1.txt");
+    let example_data = include_str!("../input/day1_example.txt");
+    let data = include_str!("../input/day1.txt");
 
     let example_lists = parse_data_into_two_sorted_lists(example_data);
     let lists = parse_data_into_two_sorted_lists(data);
