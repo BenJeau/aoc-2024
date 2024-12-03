@@ -4,10 +4,14 @@ fn main() {
     let data = include_str!("../input/day3.txt");
 
     assert_eq!(extract_muls(example1_data, false), 161);
-    println!("1: {}", extract_muls(data, false)); // 159892596
+    let answer1 = extract_muls(data, false);
+    println!("1: {answer1}");
+    assert_eq!(answer1, 159892596);
 
     assert_eq!(extract_muls(example2_data, true), 48);
-    println!("2: {}", extract_muls(data, true)); // 92626942
+    let answer2 = extract_muls(data, true);
+    println!("2: {answer2}");
+    assert_eq!(answer2, 92626942);
 }
 
 fn extract_muls(data: &str, verify_do: bool) -> usize {
