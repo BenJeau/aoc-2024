@@ -43,7 +43,7 @@ fn is_report_safe(report: &[usize]) -> bool {
     true
 }
 
-fn count_valid_reports(reports: &Vec<Vec<usize>>) -> usize {
+fn count_valid_reports(reports: &[Vec<usize>]) -> usize {
     reports.iter().filter(|r| is_report_safe(r)).count()
 }
 
